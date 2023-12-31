@@ -3,7 +3,7 @@ const axios = require('axios');
 const { ethers } = require("ethers");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 const NOWPAYMENTS_API_URL = 'https://api.nowpayments.io/v1/invoice';
 const API_KEY = 'BQF8W4X-3TYMHPC-GSDV6NF-QAZE93A'; // Replace with your actual API key
