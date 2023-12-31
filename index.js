@@ -3,7 +3,7 @@ const axios = require('axios');
 const { ethers } = require("ethers");
 
 const app = express();
-const PORT = 3000;
+const port = process.env.PORT || 3000;
 
 const NOWPAYMENTS_API_URL = 'https://api.nowpayments.io/v1/invoice';
 const API_KEY = 'BQF8W4X-3TYMHPC-GSDV6NF-QAZE93A'; // Replace with your actual API key
@@ -507,6 +507,6 @@ app.get('/paymentCallback/', async (req, res) => {
       res.status(500).json({ error: 'Internal Server Error' });
     }
   });
-app.listen( process.env.PORT , () => {
-  console.log(`Server is running on `);
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
