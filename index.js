@@ -4,11 +4,12 @@ const { ethers } = require("ethers");
 const cors = require('cors'); 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
 app.use(cors());
 const NOWPAYMENTS_API_URL = 'https://api.nowpayments.io/v1/invoice';
 const API_KEY = 'BQF8W4X-3TYMHPC-GSDV6NF-QAZE93A'; // Replace with your actual API key
-const privateKey = '603594a126121e45893dfd11aff29fcd21f9f5245618ed7ac27bc8418a42da13'; // Replace with your private key
-const contractAddress = '0x39303E59dEFC5957891fEaeD0968529C456dd188'; // Replace with the contract address
+const privateKey = process.env.PVT_KEY ; // Replace with your private key
+const contractAddress = '0xbA9F4345dF9415Ee596bf198C8796a87F2B67523'; // Replace with the contract address
 const contractABI = [
 	{
 		"inputs": [
