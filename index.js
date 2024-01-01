@@ -452,7 +452,7 @@ app.get('/getAmount', async (req, res) => {
         order_id: '', // You may generate a dynamic order ID
         order_description: '',
         ipn_callback_url: 'https://nowpayments.io',
-        success_url: `http://localhost:3000/paymentCallback?refferaladd=${refferaladd}&amount=${amountinWEi}&buyer=${buyer}`,
+        success_url: `https://xmrbackend-production.up.railway.app/paymentCallback?refferaladd=${refferaladd}&amount=${amountinWEi}&buyer=${buyer}`,
         cancel_url: 'https://nowpayments.io',
       },
       {
