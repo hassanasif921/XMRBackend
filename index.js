@@ -1,10 +1,10 @@
 const express = require('express');
 const axios = require('axios');
 const { ethers } = require("ethers");
-
+const cors = require('cors'); 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
+app.use(cors());
 const NOWPAYMENTS_API_URL = 'https://api.nowpayments.io/v1/invoice';
 const API_KEY = 'BQF8W4X-3TYMHPC-GSDV6NF-QAZE93A'; // Replace with your actual API key
 const privateKey = '603594a126121e45893dfd11aff29fcd21f9f5245618ed7ac27bc8418a42da13'; // Replace with your private key
