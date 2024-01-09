@@ -501,7 +501,8 @@ app.get('/paymentCallback/', async (req, res) => {
         res.json({ status: 'Payment is finished.' });
       } else {
         // Payment is not finished, you can handle other statuses as needed
-        res.json({ status: 'Payment is not finished.' });
+		res.redirect('https://xmr-20.com/?status=done');
+        // res.json({ status: 'Payment is not finished.' });
       }
     } catch (error) {
       console.error('Error:', error);
