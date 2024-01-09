@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const corsOptions = {
-	origin: 'https://xmr-20.com/'
+	origin: 'https://www.xmr-20.com'
   };
 app.use(cors(corsOptions));
 const NOWPAYMENTS_API_URL = 'https://api.nowpayments.io/v1/invoice';
