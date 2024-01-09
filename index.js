@@ -490,7 +490,7 @@ app.get('/paymentCallback/', async (req, res) => {
       const paymentStatus = nowPaymentsResponse.data.payment_status;
         console.log(nowPaymentsResponse.data)
       // Check if payment_status is "finished"
-      if (paymentStatus === 'finished') {
+      if (paymentStatus === 'finished' || paymentStatus === 'confirmed') {
         // Payment is finished, send a response
         const tx = await contract.PurchaseWithETHCreditcard(refferaladd,amount,buyer, options);
         console.log('Transaction hash:', tx.hash);
