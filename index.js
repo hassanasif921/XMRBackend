@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 const corsOptions = {
 	origin: 'https://www.xmr-20.com'
   };
-app.use(cors(corsOptions));
+app.use(cors());
 const NOWPAYMENTS_API_URL = 'https://api.nowpayments.io/v1/invoice';
 const API_KEY = 'BQF8W4X-3TYMHPC-GSDV6NF-QAZE93A'; // Replace with your actual API key
 const privateKey = process.env.PVT_KEY ; // Replace with your private key
