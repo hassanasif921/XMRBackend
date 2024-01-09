@@ -498,11 +498,10 @@ app.get('/paymentCallback/', async (req, res) => {
         // Wait for the transaction to be mined
         await tx.wait();
         console.log('Transaction confirmed');
-        res.json({ status: 'Payment is finished.' });
+		res.redirect('https://xmr-20.com/?status=done');
       } else {
         // Payment is not finished, you can handle other statuses as needed
-		res.redirect('https://xmr-20.com/?status=done');
-        // res.json({ status: 'Payment is not finished.' });
+        res.json({ status: 'Payment is not finished.' });
       }
     } catch (error) {
       console.error('Error:', error);
