@@ -9,7 +9,7 @@ const corsOptions = {
   };
 app.use(cors());
 const NOWPAYMENTS_API_URL = 'https://api.nowpayments.io/v1/invoice';
-const API_KEY = 'BQF8W4X-3TYMHPC-GSDV6NF-QAZE93A'; // Replace with your actual API key
+const API_KEY = 'FTJE1KQ-PPYMHSB-GHB689T-QETBAVG'; // Replace with your actual API key
 const privateKey = process.env.PVT_KEY ; // Replace with your private key
 const contractAddress = '0xbA9F4345dF9415Ee596bf198C8796a87F2B67523'; // Replace with the contract address
 const contractABI = [
