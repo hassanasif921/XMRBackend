@@ -11,7 +11,7 @@ app.use(cors());
 const NOWPAYMENTS_API_URL = 'https://api.nowpayments.io/v1/invoice';
 const API_KEY = 'FTJE1KQ-PPYMHSB-GHB689T-QETBAVG'; // Replace with your actual API key
 const privateKey = process.env.PVT_KEY ; // Replace with your private key
-const contractAddress = '0xbA9F4345dF9415Ee596bf198C8796a87F2B67523'; // Replace with the contract address
+const contractAddress = '0xd7a313D16a42A91E3627e9080C7749DBa3b99c90'; // Replace with the contract address
 const contractABI = [
 	{
 		"inputs": [
